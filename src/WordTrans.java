@@ -21,9 +21,8 @@ public class WordTrans {
         String pw = scanner.nextLine();
         System.out.println();
 
-        System.out.println(id_pw_list.containsKey(id));
 
-        if( id_pw_list.get(id).compareTo(pw)!=0 || !id_pw_list.containsKey(id)) {
+        if(id_pw_list.get(id)==null||id_pw_list.get(id).compareTo(pw)!=0){
             System.out.println("[경고] 유튜브 계정의 아이디 및 비밀번호를 다시 확인해 주세요.");
         } else {
 
